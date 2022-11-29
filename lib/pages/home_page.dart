@@ -14,11 +14,19 @@ class HomePage extends StatelessWidget {
           children: [
             ElevatedButton(
               child: const Text('inicial'),
-              onPressed: () => Get.toNamed("/inicial/page1"),
+              onPressed: () => Get.toNamed('/inicial/page1'),
             ),
             ElevatedButton(
               child: const Text('página que não existe'),
-              onPressed: () => Get.toNamed("/paginaquenaoexiste"),
+              onPressed: () => Get.toNamed('/paginaquenaoexiste'),
+            ),
+            ElevatedButton(
+              child: const Text('envio de parâmetros'),
+              onPressed: () => Get.toNamed('/envio_parametros'),
+            ),
+            ElevatedButton(
+              child: const Text('Middlewares'),
+              onPressed: () => Get.toNamed('/middlewares'),
             ),
           ],
         ),
